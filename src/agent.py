@@ -14,7 +14,7 @@ class SearchAgent:
         
         self.chat_model = ChatOpenAI(model_name="gpt-3.5-turbo-16k", temperature=0, streaming=True, openai_api_key=os.environ.get("OPENAI_API_KEY"))
 
-        self.vector_store = Chroma(embedding_function=OpenAIEmbeddings(), persist_directory="../chroma_db_oai")
+        self.vector_store = Chroma(embedding_function=OpenAIEmbeddings(), persist_directory="./chroma_db_oai")
         
         self.conversation_memory = ConversationSummaryBufferMemory(llm=self.chat_model, input_key='question', output_key='answer', return_messages=True)
         
