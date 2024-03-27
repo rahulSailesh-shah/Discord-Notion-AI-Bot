@@ -1,4 +1,7 @@
 # Byte-compiled / optimized / DLL files
+chroma_db_oai
+
+
 __pycache__/
 *.py[cod]
 *$py.class
@@ -26,9 +29,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-chroma_db_oai/
-/chroma_db_oai
-chroma_db_oai
+
 
 
 
